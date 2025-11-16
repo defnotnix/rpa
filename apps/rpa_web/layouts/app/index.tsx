@@ -17,14 +17,25 @@ export function LayoutApp({ children }: PropsWithChildren) {
         <head>
           <ColorSchemeScript
             nonce="8IBTHwOdqNKAWeKl7plt8g=="
-            defaultColorScheme={"auto"}
+            defaultColorScheme={"light"}
           />
           <title>Rastriya Parwartan Abhiyan</title>
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap"
+            rel="stylesheet"
+          />
         </head>
-        <body>
+        <body
+          style={{
+            background: "var(--mantine-color-gray-2)",
+          }}
+        >
           <MantineProvider
             theme={configThemeMantine}
-            defaultColorScheme={"auto"}
+            defaultColorScheme={"light"}
           >
             <ModalsProvider>
               <Notifications />

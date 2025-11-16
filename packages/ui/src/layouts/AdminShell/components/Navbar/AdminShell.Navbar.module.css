@@ -1,0 +1,36 @@
+.navmain,
+.subnav {
+  border-radius: var(--mantine-radius-md);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.navmain {
+  color: var(--mantine-color-gray-1);
+
+  font-weight: 500 !important;
+
+  &[data-active] {
+    color: black;
+    background: var(--mantine-color-dark-3);
+
+    svg {
+      color: var(--mantine-color-brand-6);
+    }
+  }
+}
+
+.subnav {
+  color: var(--mantine-color-gray-1);
+
+  &[data-active] {
+    color: black;
+    background: var(--mantine-color-dark-3);
+
+    svg {
+      color: var(--mantine-color-brand-6);
+    }
+  }
+}

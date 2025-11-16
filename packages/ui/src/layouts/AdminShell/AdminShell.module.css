@@ -1,0 +1,29 @@
+.root {
+}
+
+.navbar {
+  /* background: linear-gradient(to bottom, #12151d, #080b16); */
+  background: var(--mantine-color-dark-9);
+  border: none;
+  border-right: 1px solid var(--mantine-color-gray-4);
+}
+
+.main {
+  min-height: 100vh;
+  background: var(--mantine-color-gray-0);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 0;
+  }
+
+  .main_container {
+    border-radius: 0;
+    min-height: 100vh;
+    width: 100vw;
+  }
+}
+
+.header {
+}

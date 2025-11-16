@@ -1,3 +1,5 @@
+const fontFamily = `"Stack Sans Headline", sans-serif`;
+
 export const configThemeMantineMain: any = {
   // * COLORS & SHADES
   colors: {
@@ -26,11 +28,11 @@ export const configThemeMantineMain: any = {
   // black : "#000000"
 
   // * FONTS
-  fontFamily: `"Host Grotesk", serif !important`,
+  fontFamily: fontFamily,
   fontSmoothing: true,
 
   headings: {
-    fontFamily: `"Host Grotesk", serif`,
+    fontFamily: fontFamily,
     sizes: {
       h1: { fontSize: "36" },
     },
